@@ -27,7 +27,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="font-medium">Email</p>
-                  <p className="text-purple-200">gerold@example.com</p>
+                  <p className="text-purple-200">rani@example.com</p>
                 </div>
               </div>
               <div className="flex items-center gap-4">
@@ -103,7 +103,7 @@ const Contact = () => {
         {/* Footer */}
         <div className="text-center mt-16 pt-8 border-t border-purple-600/30">
           <p className="text-purple-200">
-            © 2024 Gerold. All rights reserved. Built with ❤️ using React & Tailwind CSS
+            © 2025 Rani Ghazi. All rights reserved.
           </p>
         </div>
       </div>

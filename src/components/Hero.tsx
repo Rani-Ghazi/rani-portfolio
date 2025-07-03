@@ -16,9 +16,9 @@ const Hero = () => {
         {/* Text Content */}
         <div className="text-left space-y-8 animate-fade-in">
           <div>
-            <p className="text-lg text-purple-600 font-medium mb-2">Hello, I am Gerold</p>
+            <p className="text-lg text-purple-600 font-medium mb-2">Hello, I am Rani Ghazi</p>
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight">
-              Web Developer
+              Software Engineer
               <span className="text-purple-600"> +</span>
             </h1>
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-purple-600 mt-2">
@@ -56,7 +56,7 @@ const Hero = () => {
               <div className="w-full h-full rounded-3xl bg-gray-900 flex items-center justify-center overflow-hidden">
                 <img 
                   src="/lovable-uploads/38b69509-5ac8-43b9-8d6e-6bd21b0213db.png" 
-                  alt="Gerold - Web Developer & UX Designer"
+                  alt="Rani Ghazi - Software Engineer & UX Designer"
                   className="w-full h-full object-cover rounded-3xl"
                 />
               </div>
