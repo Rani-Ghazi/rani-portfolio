@@ -32,29 +32,29 @@ const Services = () => {
   ];
 
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-50 to-purple-50">
+    <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-50 to-purple-50">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
+        <div className="text-center mb-12 sm:mb-16 animate-fade-in">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
             What I Do
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto px-4">
             I help businesses create digital experiences that work. Here's how I can help you.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
           {services.map((service, index) => (
             <div 
               key={index} 
-              className={`${service.color} ${service.textColor} p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:-translate-y-2 animate-fade-in group cursor-pointer`}
+              className={`${service.color} ${service.textColor} p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:-translate-y-2 animate-fade-in group cursor-pointer`}
               style={{ animationDelay: `${index * 150}ms` }}
             >
               <div className="flex items-center gap-3 mb-4">
-                <div className="text-3xl group-hover:scale-110 transition-transform duration-300">{service.icon}</div>
-                <h3 className="text-xl font-bold group-hover:text-purple-600 transition-colors duration-300">{service.title}</h3>
+                <div className="text-2xl sm:text-3xl group-hover:scale-110 transition-transform duration-300">{service.icon}</div>
+                <h3 className="text-lg sm:text-xl font-bold group-hover:text-purple-600 transition-colors duration-300">{service.title}</h3>
               </div>
-              <p className={`${service.color === 'bg-white' ? 'text-gray-600' : 'text-white/90'} leading-relaxed`}>
+              <p className={`${service.color === 'bg-white' ? 'text-gray-600' : 'text-white/90'} leading-relaxed text-sm sm:text-base`}>
                 {service.description}
               </p>
             </div>
