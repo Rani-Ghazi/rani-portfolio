@@ -16,33 +16,38 @@ const Hero = () => {
         {/* Text Content */}
         <div className="text-left space-y-8 animate-fade-in">
           <div>
-            <p className="text-lg text-purple-600 font-medium mb-2">Hello, I am Rani Ghazi</p>
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight">
+            <p className="text-lg text-purple-600 font-medium mb-2 animate-fade-in" style={{ animationDelay: '0.2s' }}>Hello, I am Rani Ghazi</p>
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight animate-fade-in" style={{ animationDelay: '0.4s' }}>
               Software Engineer
               <span className="text-purple-600"> +</span>
             </h1>
-            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-purple-600 mt-2">
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-purple-600 mt-2 animate-fade-in" style={{ animationDelay: '0.6s' }}>
               UX Designer
             </h2>
           </div>
           
-          <p className="text-lg text-gray-600 max-w-lg leading-relaxed">
-            I create stunning and responsive web applications with 5+ years of experience in modern development frameworks and user-centered design principles.
+          <p className="text-lg text-gray-600 max-w-lg leading-relaxed animate-fade-in" style={{ animationDelay: '0.8s' }}>
+            I build clean, functional web applications and design intuitive user experiences. 
+            Based in Oman with 5+ years turning ideas into digital reality.
           </p>
 
-          <div className="flex flex-wrap gap-4">
-            <Button className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 rounded-full font-medium transition-all duration-300 hover:scale-105">
+          <div className="flex flex-wrap gap-4 animate-fade-in" style={{ animationDelay: '1s' }}>
+            <Button className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 rounded-full font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg">
               Hire Me Now
             </Button>
-            <Button variant="outline" className="border-purple-600 text-purple-600 hover:bg-purple-50 px-8 py-3 rounded-full font-medium transition-all duration-300 hover:scale-105">
+            <Button variant="outline" className="border-purple-600 text-purple-600 hover:bg-purple-50 px-8 py-3 rounded-full font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg">
               View Portfolio
             </Button>
           </div>
 
           {/* Social Links */}
-          <div className="flex gap-4 pt-4">
-            {['Facebook', 'Instagram', 'Twitter', 'LinkedIn'].map((social) => (
-              <div key={social} className="w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center hover:bg-purple-50 transition-colors cursor-pointer">
+          <div className="flex gap-4 pt-4 animate-fade-in" style={{ animationDelay: '1.2s' }}>
+            {['Facebook', 'Instagram', 'Twitter', 'LinkedIn'].map((social, index) => (
+              <div 
+                key={social} 
+                className="w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center hover:bg-purple-50 transition-all duration-300 cursor-pointer hover:scale-110 hover:shadow-lg animate-fade-in"
+                style={{ animationDelay: `${1.4 + index * 0.1}s` }}
+              >
                 <div className="w-5 h-5 bg-purple-600 rounded-full"></div>
               </div>
             ))}
@@ -50,22 +55,22 @@ const Hero = () => {
         </div>
 
         {/* Profile Image */}
-        <div className="flex justify-center lg:justify-end animate-scale-in">
+        <div className="flex justify-center lg:justify-end animate-scale-in" style={{ animationDelay: '0.5s' }}>
           <div className="relative">
-            <div className="w-80 h-80 sm:w-96 sm:h-96 rounded-3xl bg-gradient-to-br from-purple-600 to-purple-800 p-1">
+            <div className="w-80 h-80 sm:w-96 sm:h-96 rounded-3xl bg-gradient-to-br from-purple-600 to-purple-800 p-1 hover:scale-105 transition-transform duration-500">
               <div className="w-full h-full rounded-3xl bg-gray-900 flex items-center justify-center overflow-hidden">
                 <img 
                   src="/lovable-uploads/38b69509-5ac8-43b9-8d6e-6bd21b0213db.png" 
                   alt="Rani Ghazi - Software Engineer & UX Designer"
-                  className="w-full h-full object-cover rounded-3xl"
+                  className="w-full h-full object-cover rounded-3xl transition-transform duration-500 hover:scale-110"
                 />
               </div>
             </div>
             {/* Floating elements */}
-            <div className="absolute -top-6 -right-6 w-16 h-16 bg-white rounded-2xl shadow-lg flex items-center justify-center animate-bounce">
+            <div className="absolute -top-6 -right-6 w-16 h-16 bg-white rounded-2xl shadow-lg flex items-center justify-center animate-bounce hover:shadow-xl transition-shadow duration-300">
               <div className="w-8 h-8 bg-purple-600 rounded-lg"></div>
             </div>
-            <div className="absolute -bottom-6 -left-6 w-16 h-16 bg-white rounded-2xl shadow-lg flex items-center justify-center animate-bounce delay-1000">
+            <div className="absolute -bottom-6 -left-6 w-16 h-16 bg-white rounded-2xl shadow-lg flex items-center justify-center animate-bounce delay-1000 hover:shadow-xl transition-shadow duration-300">
               <div className="w-8 h-8 bg-pink-500 rounded-lg"></div>
             </div>
           </div>

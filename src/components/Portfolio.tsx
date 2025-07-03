@@ -51,13 +51,12 @@ const Portfolio = () => {
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-50 to-purple-50">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
-            My Recent Works
+            Recent Work
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Showcasing some of my latest projects that demonstrate my expertise in modern web development, 
-            mobile applications, and user experience design.
+            Some projects I've worked on recently. Each one taught me something new.
           </p>
         </div>
 
@@ -66,7 +65,7 @@ const Portfolio = () => {
           {projects.filter(project => project.featured).map((project, index) => (
             <div 
               key={index}
-              className="group bg-white rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-500 overflow-hidden animate-fade-in"
+              className="group bg-white rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-700 overflow-hidden animate-fade-in hover:scale-[1.02]"
             >
               <div className="grid lg:grid-cols-2 gap-0">
                 <div className="relative overflow-hidden">
@@ -77,7 +76,7 @@ const Portfolio = () => {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
                   <div className="absolute top-6 left-6">
-                    <span className="bg-purple-600 text-white px-4 py-2 rounded-full text-sm font-medium">
+                    <span className="bg-purple-600 text-white px-4 py-2 rounded-full text-sm font-medium animate-pulse">
                       Featured Project
                     </span>
                   </div>
@@ -88,24 +87,24 @@ const Portfolio = () => {
                       {project.category}
                     </span>
                   </div>
-                  <h3 className="text-3xl font-bold text-gray-900 mb-4">{project.title}</h3>
+                  <h3 className="text-3xl font-bold text-gray-900 mb-4 group-hover:text-purple-600 transition-colors duration-300">{project.title}</h3>
                   <p className="text-gray-600 text-lg mb-6 leading-relaxed">{project.description}</p>
                   <div className="flex flex-wrap gap-2 mb-8">
                     {project.tags.map((tag, tagIndex) => (
                       <span 
                         key={tagIndex}
-                        className="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-medium"
+                        className="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-medium hover:bg-purple-200 transition-colors duration-300"
                       >
                         {tag}
                       </span>
                     ))}
                   </div>
                   <div className="flex gap-4">
-                    <Button className="bg-purple-600 hover:bg-purple-700 text-white rounded-lg">
+                    <Button className="bg-purple-600 hover:bg-purple-700 text-white rounded-lg hover:scale-105 transition-all duration-300 hover:shadow-lg">
                       <ExternalLink className="w-4 h-4 mr-2" />
                       Live Demo
                     </Button>
-                    <Button variant="outline" className="border-gray-300 text-gray-700 hover:bg-gray-50 rounded-lg">
+                    <Button variant="outline" className="border-gray-300 text-gray-700 hover:bg-gray-50 rounded-lg hover:scale-105 transition-all duration-300 hover:shadow-lg">
                       <Github className="w-4 h-4 mr-2" />
                       View Code
                     </Button>
@@ -121,7 +120,7 @@ const Portfolio = () => {
           {projects.filter(project => !project.featured).map((project, index) => (
             <div 
               key={index}
-              className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 overflow-hidden animate-fade-in"
+              className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-4 overflow-hidden animate-fade-in cursor-pointer"
               style={{ animationDelay: `${index * 150}ms` }}
             >
               <div className="relative overflow-hidden">
@@ -133,10 +132,10 @@ const Portfolio = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="flex gap-3">
-                    <Button size="sm" className="bg-white/20 backdrop-blur-sm text-white border-white/30 hover:bg-white/30">
+                    <Button size="sm" className="bg-white/20 backdrop-blur-sm text-white border-white/30 hover:bg-white/30 hover:scale-110 transition-all duration-300">
                       <ExternalLink className="w-4 h-4" />
                     </Button>
-                    <Button size="sm" variant="outline" className="bg-white/20 backdrop-blur-sm text-white border-white/30 hover:bg-white/30">
+                    <Button size="sm" variant="outline" className="bg-white/20 backdrop-blur-sm text-white border-white/30 hover:bg-white/30 hover:scale-110 transition-all duration-300">
                       <Github className="w-4 h-4" />
                     </Button>
                   </div>
@@ -148,7 +147,7 @@ const Portfolio = () => {
                     {project.category}
                   </span>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-purple-600 transition-colors">
+                <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-purple-600 transition-colors duration-300">
                   {project.title}
                 </h3>
                 <p className="text-gray-600 text-sm mb-4 leading-relaxed line-clamp-3">
@@ -158,13 +157,13 @@ const Portfolio = () => {
                   {project.tags.slice(0, 3).map((tag, tagIndex) => (
                     <span 
                       key={tagIndex}
-                      className="bg-gray-100 text-gray-600 px-2 py-1 rounded text-xs font-medium"
+                      className="bg-gray-100 text-gray-600 px-2 py-1 rounded text-xs font-medium hover:bg-purple-100 hover:text-purple-700 transition-colors duration-300"
                     >
                       {tag}
                     </span>
                   ))}
                   {project.tags.length > 3 && (
-                    <span className="bg-gray-100 text-gray-600 px-2 py-1 rounded text-xs font-medium">
+                    <span className="bg-gray-100 text-gray-600 px-2 py-1 rounded text-xs font-medium hover:bg-purple-100 hover:text-purple-700 transition-colors duration-300">
                       +{project.tags.length - 3}
                     </span>
                   )}
@@ -172,14 +171,6 @@ const Portfolio = () => {
               </div>
             </div>
           ))}
-        </div>
-
-        {/* Call to Action */}
-        <div className="text-center mt-16">
-          <p className="text-gray-600 mb-6">Want to see more of my work?</p>
-          <Button className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 rounded-full font-medium">
-            View All Projects
-          </Button>
         </div>
       </div>
     </section>
