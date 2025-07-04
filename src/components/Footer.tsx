@@ -26,18 +26,30 @@ const Footer = () => {
                 onClick={openEmail}
                 className="flex items-center gap-3 text-gray-300 hover:text-white transition-colors duration-500 hover:scale-105 transform group"
               >
-                <span className="text-purple-400 group-hover:rotate-12 transition-transform duration-500">📧</span>
+                <img 
+                  src="https://img.icons8.com/?size=100&id=P7UIlhbpWzZm&format=png&color=000000" 
+                  alt="Email" 
+                  className="w-5 h-5 group-hover:rotate-12 transition-transform duration-500"
+                />
                 <span>developerrani98@gmail.com</span>
               </button>
               <button 
                 onClick={openWhatsApp}
                 className="flex items-center gap-3 text-gray-300 hover:text-white transition-colors duration-500 hover:scale-105 transform group"
               >
-                <span className="text-green-400 group-hover:rotate-12 transition-transform duration-500">📱</span>
+                <img 
+                  src="https://www.flaticon.com/free-icon/whatsapp_4423697" 
+                  alt="WhatsApp" 
+                  className="w-5 h-5 group-hover:rotate-12 transition-transform duration-500"
+                />
                 <span>+968 95454284</span>
               </button>
               <div className="flex items-center gap-3 text-gray-300">
-                <span className="text-blue-400">📍</span>
+                <img 
+                  src="https://www.flaticon.com/free-icon/location_535137" 
+                  alt="Location" 
+                  className="w-5 h-5"
+                />
                 <span>Sultanate of Oman</span>
               </div>
             </div>
@@ -59,7 +71,7 @@ const Footer = () => {
           <div className="space-y-4 animate-fade-in-slow" style={{ animationDelay: '0.4s' }}>
             <h3 className="text-xl font-bold text-white mb-4">Technologies</h3>
             <div className="space-y-2">
-              {['React', 'Next.js', 'React Native', 'Flutter'].map((tech, index) => (
+              {['Next.js', 'Flutter', 'TypeScript'].map((tech, index) => (
                 <div key={tech} className="text-gray-300 hover:text-white transition-colors duration-500 cursor-pointer hover:scale-105 transform">
                   {tech}
                 </div>
