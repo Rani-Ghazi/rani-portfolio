@@ -5,116 +5,121 @@ import { Button } from "@/components/ui/button";
 const Portfolio = () => {
   const projects = [
     {
-      title: "Trading Dashboard",
+      title: "Digital Marketing Agency",
       category: "Web Application",
-      description: "A comprehensive trading platform with real-time analytics, portfolio management, and advanced charting capabilities.",
-      image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600&h=400&fit=crop",
-      tags: ["React", "TypeScript", "Chart.js", "WebSocket"],
+      description: "A modern digital marketing agency website with clean design, service showcases, and client engagement features. Built with responsive design and smooth user experience.",
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
+      tags: ["React", "Next.js", "Tailwind CSS", "TypeScript"],
+      liveUrl: "https://digital-marketing-agency-psi.vercel.app/",
+      githubUrl: null,
       featured: true
     },
     {
-      title: "E-commerce Platform",
-      category: "Full Stack",
-      description: "Modern e-commerce solution with payment integration, inventory management, and customer analytics.",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",
-      tags: ["Next.js", "Node.js", "MongoDB", "Stripe"]
+      title: "Netflix Clone",
+      category: "Streaming Platform",
+      description: "A fully functional Netflix clone with movie browsing, detailed views, and responsive design. Features include movie categorization and smooth navigation.",
+      image: "https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?w=600&h=400&fit=crop",
+      tags: ["React", "JavaScript", "CSS3", "API Integration"],
+      liveUrl: "https://same-k7btvioiaa8-latest.netlify.app/",
+      githubUrl: null
     },
     {
-      title: "Mobile Banking App",
-      category: "Mobile App",
-      description: "Secure mobile banking application with biometric authentication and real-time transactions.",
-      image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&h=400&fit=crop",
-      tags: ["React Native", "Redux", "Node.js", "PostgreSQL"]
+      title: "Electronic Invoice Manager",
+      category: "Business Application",
+      description: "A responsive web application designed to streamline invoicing for small businesses in Oman and the Gulf. Features invoice creation, management, and tracking.",
+      image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&h=400&fit=crop",
+      tags: ["React", "Node.js", "PostgreSQL", "Supabase"],
+      liveUrl: "https://invoicemanagerapp.netlify.app/",
+      githubUrl: "https://github.com/Rani-Ghazi/Invoice-Manager-App"
     },
     {
-      title: "Brand Identity System",
-      category: "Design System",
-      description: "Complete brand identity and design system for a modern tech startup with component library.",
-      image: "https://images.unsplash.com/photo-1558655146-364adaf25c78?w=600&h=400&fit=crop",
-      tags: ["Figma", "Design Tokens", "React", "Storybook"]
-    },
-    {
-      title: "AI-Powered Analytics",
-      category: "Machine Learning",
-      description: "Intelligent analytics dashboard using machine learning for predictive insights and data visualization.",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
-      tags: ["Python", "TensorFlow", "React", "D3.js"]
-    },
-    {
-      title: "Social Media Manager",
-      category: "SaaS Platform",
-      description: "All-in-one social media management platform with scheduling, analytics, and team collaboration.",
-      image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=600&h=400&fit=crop",
-      tags: ["Vue.js", "Laravel", "Redis", "AWS"]
+      title: "InviteFlow - Digital Barcode System",
+      category: "Event Management",
+      description: "A smart digital invitation management system for event organizers in Oman. Create barcoded digital invitations and verify guests instantly using mobile + PDA.",
+      image: "https://images.unsplash.com/photo-1511578314322-379afb476865?w=600&h=400&fit=crop",
+      tags: ["React", "QR Code", "Firebase", "Mobile-First"],
+      liveUrl: "https://inviteflow.netlify.app/",
+      githubUrl: "https://github.com/Rani-Ghazi/InviteFlow"
     }
   ];
 
   return (
-    <section id="portfolio" className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-50 via-white to-purple-50 relative overflow-hidden">
+    <section id="portfolio" className="py-20 sm:py-28 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-50 via-white to-purple-50 relative overflow-hidden">
       {/* Enhanced background decoration */}
-      <div className="absolute inset-0 opacity-20">
-        <div className="absolute top-20 left-20 w-64 h-64 bg-gradient-to-br from-purple-400 to-pink-400 rounded-full filter blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-20 right-20 w-80 h-80 bg-gradient-to-br from-blue-400 to-cyan-400 rounded-full filter blur-3xl animate-pulse delay-1000"></div>
+      <div className="absolute inset-0 opacity-30">
+        <div className="absolute top-20 left-20 w-72 h-72 bg-gradient-to-br from-purple-400 to-pink-400 rounded-full filter blur-3xl animate-pulse-ultra-slow"></div>
+        <div className="absolute bottom-20 right-20 w-96 h-96 bg-gradient-to-br from-blue-400 to-cyan-400 rounded-full filter blur-3xl animate-pulse-ultra-slow animation-delay-4000"></div>
       </div>
 
       <div className="max-w-7xl mx-auto relative z-10">
-        <div className="text-center mb-12 sm:mb-16 animate-fade-in">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 hover:text-purple-700 transition-colors duration-500 transform hover:scale-105">
-            Recent Work
-          </h2>
-          <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto px-4 hover:text-gray-800 transition-colors duration-300">
-            Some projects I've worked on recently. Each one taught me something new.
+        <div className="text-center mb-16 sm:mb-20 animate-fade-in-ultra-slow">
+          <div className="inline-block p-2 bg-gradient-to-r from-purple-100 to-pink-100 rounded-2xl mb-6 animate-float-ultra-slow">
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-purple-600 via-pink-600 to-purple-800 bg-clip-text text-transparent hover:scale-105 transition-transform duration-700">
+              Recent Work
+            </h2>
+          </div>
+          <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-4 leading-relaxed hover:text-gray-800 transition-colors duration-500">
+            Some projects I've worked on recently. Each one taught me something new and solved real business problems.
           </p>
         </div>
 
         {/* Enhanced Featured Project */}
-        <div className="mb-12 sm:mb-16">
+        <div className="mb-16 sm:mb-20">
           {projects.filter(project => project.featured).map((project, index) => (
             <div 
               key={index}
-              className="group bg-white rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-700 overflow-hidden animate-fade-in hover:scale-105 transform hover:-translate-y-2"
+              className="group bg-white rounded-3xl shadow-2xl hover:shadow-4xl transition-all duration-1000 overflow-hidden animate-fade-in-ultra-slow hover:scale-[1.02] transform hover:-translate-y-4"
             >
               <div className="grid lg:grid-cols-2 gap-0">
                 <div className="relative overflow-hidden order-1 lg:order-1">
                   <img 
                     src={project.image} 
                     alt={project.title}
-                    className="w-full h-64 sm:h-80 lg:h-full min-h-[300px] lg:min-h-[400px] object-cover group-hover:scale-110 transition-transform duration-700"
+                    className="w-full h-72 sm:h-96 lg:h-full min-h-[350px] lg:min-h-[500px] object-cover group-hover:scale-110 transition-transform duration-1000"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent group-hover:from-black/40 transition-all duration-500"></div>
-                  <div className="absolute top-4 sm:top-6 left-4 sm:left-6">
-                    <span className="bg-gradient-to-r from-purple-600 to-purple-800 text-white px-3 sm:px-4 py-1 sm:py-2 rounded-full text-xs sm:text-sm font-medium animate-pulse hover:scale-110 transition-transform duration-300">
-                      Featured Project
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent group-hover:from-black/50 transition-all duration-700"></div>
+                  <div className="absolute top-6 sm:top-8 left-6 sm:left-8">
+                    <span className="bg-gradient-to-r from-purple-600 to-purple-800 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-full text-sm sm:text-base font-semibold animate-pulse-ultra-slow hover:scale-110 transition-transform duration-500 shadow-lg">
+                      ⭐ Featured Project
                     </span>
                   </div>
                 </div>
-                <div className="p-6 sm:p-8 lg:p-12 flex flex-col justify-center order-2 lg:order-2">
-                  <div className="mb-3 sm:mb-4">
-                    <span className="text-purple-600 font-semibold text-xs sm:text-sm uppercase tracking-wider hover:text-purple-800 transition-colors duration-300">
+                <div className="p-8 sm:p-10 lg:p-16 flex flex-col justify-center order-2 lg:order-2">
+                  <div className="mb-4 sm:mb-6">
+                    <span className="text-purple-600 font-bold text-sm sm:text-base uppercase tracking-wider hover:text-purple-800 transition-colors duration-500 bg-purple-50 px-3 py-1 rounded-full">
                       {project.category}
                     </span>
                   </div>
-                  <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 sm:mb-4 group-hover:text-purple-600 transition-colors duration-300 hover:scale-105 transform">{project.title}</h3>
-                  <p className="text-gray-600 text-base sm:text-lg mb-4 sm:mb-6 leading-relaxed group-hover:text-gray-800 transition-colors duration-300">{project.description}</p>
-                  <div className="flex flex-wrap gap-2 mb-6 sm:mb-8">
+                  <h3 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4 sm:mb-6 group-hover:text-purple-600 transition-colors duration-500 hover:scale-105 transform leading-tight">{project.title}</h3>
+                  <p className="text-gray-600 text-lg sm:text-xl mb-6 sm:mb-8 leading-relaxed group-hover:text-gray-800 transition-colors duration-500">{project.description}</p>
+                  <div className="flex flex-wrap gap-3 mb-8 sm:mb-10">
                     {project.tags.map((tag, tagIndex) => (
                       <span 
                         key={tagIndex}
-                        className="bg-gradient-to-r from-purple-100 to-purple-200 text-purple-700 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm font-medium hover:from-purple-200 hover:to-purple-300 hover:scale-110 transition-all duration-300 transform cursor-pointer"
+                        className="bg-gradient-to-r from-purple-100 to-purple-200 text-purple-700 px-4 sm:px-5 py-2 rounded-full text-sm sm:text-base font-semibold hover:from-purple-200 hover:to-purple-300 hover:scale-110 transition-all duration-500 transform cursor-pointer shadow-sm"
                       >
                         {tag}
                       </span>
                     ))}
                   </div>
-                  <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-                    <Button className="bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white rounded-lg hover:scale-110 transition-all duration-300 hover:shadow-2xl transform w-full sm:w-auto">
-                      <ExternalLink className="w-4 h-4 mr-2" />
+                  <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
+                    <Button 
+                      onClick={() => window.open(project.liveUrl, '_blank')}
+                      className="bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white rounded-xl hover:scale-110 transition-all duration-500 hover:shadow-2xl transform w-full sm:w-auto text-base py-3 px-6"
+                    >
+                      <ExternalLink className="w-5 h-5 mr-3" />
                       Live Demo
                     </Button>
-                    <Button variant="outline" className="border-gray-300 text-gray-700 hover:bg-gray-50 hover:border-purple-300 hover:text-purple-600 rounded-lg hover:scale-110 transition-all duration-300 hover:shadow-lg transform w-full sm:w-auto">
-                      <Github className="w-4 h-4 mr-2" />
-                      View Code
-                    </Button>
+                    {project.githubUrl && (
+                      <Button 
+                        onClick={() => window.open(project.githubUrl, '_blank')}
+                        variant="outline" 
+                        className="border-2 border-gray-300 text-gray-700 hover:bg-gray-50 hover:border-purple-300 hover:text-purple-600 rounded-xl hover:scale-110 transition-all duration-500 hover:shadow-lg transform w-full sm:w-auto text-base py-3 px-6"
+                      >
+                        <Github className="w-5 h-5 mr-3" />
+                        View Code
+                      </Button>
+                    )}
                   </div>
                 </div>
               </div>
@@ -123,54 +128,65 @@ const Portfolio = () => {
         </div>
 
         {/* Enhanced Other Projects Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6 sm:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 sm:gap-10">
           {projects.filter(project => !project.featured).map((project, index) => (
             <div 
               key={index}
-              className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-700 hover:-translate-y-6 hover:scale-105 overflow-hidden animate-fade-in cursor-pointer transform hover:rotate-1"
-              style={{ animationDelay: `${index * 150}ms` }}
+              className="group bg-white rounded-3xl shadow-xl hover:shadow-3xl transition-all duration-1000 hover:-translate-y-8 hover:scale-105 overflow-hidden animate-fade-in-ultra-slow cursor-pointer transform hover:rotate-1 border border-gray-100"
+              style={{ animationDelay: `${index * 300}ms` }}
             >
               <div className="relative overflow-hidden">
                 <img 
                   src={project.image} 
                   alt={project.title}
-                  className="w-full h-40 sm:h-48 object-cover group-hover:scale-125 transition-transform duration-700"
+                  className="w-full h-48 sm:h-56 object-cover group-hover:scale-125 transition-transform duration-1000"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500 transform scale-75 group-hover:scale-100">
-                  <div className="flex gap-3">
-                    <Button size="sm" className="bg-white/20 backdrop-blur-md text-white border-white/30 hover:bg-white/40 hover:scale-125 transition-all duration-300 transform hover:rotate-12">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-700 transform scale-75 group-hover:scale-100">
+                  <div className="flex gap-4">
+                    <Button 
+                      size="sm" 
+                      onClick={() => window.open(project.liveUrl, '_blank')}
+                      className="bg-white/20 backdrop-blur-md text-white border-white/30 hover:bg-white/40 hover:scale-125 transition-all duration-500 transform hover:rotate-12 shadow-lg"
+                    >
                       <ExternalLink className="w-4 h-4" />
                     </Button>
-                    <Button size="sm" variant="outline" className="bg-white/20 backdrop-blur-md text-white border-white/30 hover:bg-white/40 hover:scale-125 transition-all duration-300 transform hover:-rotate-12">
-                      <Github className="w-4 h-4" />
-                    </Button>
+                    {project.githubUrl && (
+                      <Button 
+                        size="sm" 
+                        variant="outline" 
+                        onClick={() => window.open(project.githubUrl, '_blank')}
+                        className="bg-white/20 backdrop-blur-md text-white border-white/30 hover:bg-white/40 hover:scale-125 transition-all duration-500 transform hover:-rotate-12 shadow-lg"
+                      >
+                        <Github className="w-4 h-4" />
+                      </Button>
+                    )}
                   </div>
                 </div>
               </div>
-              <div className="p-4 sm:p-6">
-                <div className="mb-2">
-                  <span className="text-purple-600 font-semibold text-xs uppercase tracking-wider hover:text-purple-800 transition-colors duration-300">
+              <div className="p-6 sm:p-8">
+                <div className="mb-3">
+                  <span className="text-purple-600 font-bold text-xs uppercase tracking-wider hover:text-purple-800 transition-colors duration-500 bg-purple-50 px-2 py-1 rounded-full">
                     {project.category}
                   </span>
                 </div>
-                <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 sm:mb-3 group-hover:text-purple-600 transition-colors duration-300 hover:scale-105 transform">
+                <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4 group-hover:text-purple-600 transition-colors duration-500 hover:scale-105 transform leading-tight">
                   {project.title}
                 </h3>
-                <p className="text-gray-600 text-sm leading-relaxed line-clamp-3 mb-3 sm:mb-4 group-hover:text-gray-800 transition-colors duration-300">
+                <p className="text-gray-600 text-sm sm:text-base leading-relaxed line-clamp-3 mb-4 sm:mb-6 group-hover:text-gray-800 transition-colors duration-500">
                   {project.description}
                 </p>
-                <div className="flex flex-wrap gap-1 mb-4">
+                <div className="flex flex-wrap gap-2 mb-5">
                   {project.tags.slice(0, 3).map((tag, tagIndex) => (
                     <span 
                       key={tagIndex}
-                      className="bg-gray-100 text-gray-600 px-2 py-1 rounded text-xs font-medium hover:bg-purple-100 hover:text-purple-700 hover:scale-110 transition-all duration-300 transform cursor-pointer"
+                      className="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-xs font-semibold hover:bg-purple-100 hover:text-purple-700 hover:scale-110 transition-all duration-500 transform cursor-pointer"
                     >
                       {tag}
                     </span>
                   ))}
                   {project.tags.length > 3 && (
-                    <span className="bg-gray-100 text-gray-600 px-2 py-1 rounded text-xs font-medium hover:bg-purple-100 hover:text-purple-700 hover:scale-110 transition-all duration-300 transform cursor-pointer">
+                    <span className="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-xs font-semibold hover:bg-purple-100 hover:text-purple-700 hover:scale-110 transition-all duration-500 transform cursor-pointer">
                       +{project.tags.length - 3}
                     </span>
                   )}
@@ -178,6 +194,24 @@ const Portfolio = () => {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Call to Action */}
+        <div className="text-center mt-16 sm:mt-20 animate-fade-in-ultra-slow" style={{ animationDelay: '1.5s' }}>
+          <div className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-3xl p-8 sm:p-12 border border-purple-100">
+            <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 hover:text-purple-600 transition-colors duration-500">
+              Have a project in mind?
+            </h3>
+            <p className="text-gray-600 text-lg mb-6 max-w-2xl mx-auto">
+              Let's discuss how I can help bring your ideas to life with clean code and great design.
+            </p>
+            <Button 
+              onClick={() => window.open('https://wa.me/0096895454284', '_blank')}
+              className="bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white rounded-xl hover:scale-110 transition-all duration-500 hover:shadow-2xl transform text-lg py-3 px-8"
+            >
+              Let's Work Together
+            </Button>
+          </div>
         </div>
       </div>
     </section>
