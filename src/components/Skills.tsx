@@ -1,19 +1,84 @@
 
 const Skills = () => {
   const skills = [
-    { name: "React", level: 95, icon: "⚛️", color: "from-blue-500 to-cyan-500" },
-    { name: "Flutter", level: 88, icon: "📱", color: "from-blue-600 to-indigo-600" },
-    { name: "Next.js", level: 92, icon: "🔺", color: "from-gray-700 to-gray-900" },
-    { name: "TypeScript", level: 90, icon: "📘", color: "from-blue-600 to-blue-800" },
-    { name: "Node.js", level: 87, icon: "🟢", color: "from-green-500 to-emerald-500" },
-    { name: "Supabase", level: 85, icon: "⚡", color: "from-green-600 to-teal-600" },
-    { name: "PostgreSQL", level: 82, icon: "🐘", color: "from-blue-700 to-indigo-800" },
-    { name: "React Native", level: 89, icon: "📲", color: "from-cyan-500 to-blue-500" },
-    { name: "Figma", level: 93, icon: "🎨", color: "from-pink-500 to-rose-500" },
-    { name: "Tailwind CSS", level: 94, icon: "💨", color: "from-cyan-400 to-blue-500" },
-    { name: "Firebase", level: 83, icon: "🔥", color: "from-yellow-500 to-orange-500" },
-    { name: "Docker", level: 78, icon: "🐳", color: "from-blue-600 to-cyan-600" },
-    { name: "Git", level: 91, icon: "📋", color: "from-orange-500 to-red-500" }
+    { 
+      name: "React", 
+      level: 95, 
+      icon: "https://www.flaticon.com/free-icon/physics_1126012?term=react&page=1&position=3&origin=search&related_id=1126012", 
+      color: "from-blue-500 to-cyan-500" 
+    },
+    { 
+      name: "Flutter", 
+      level: 88, 
+      icon: "https://img.icons8.com/?size=100&id=pCvIfmctRaY8&format=png&color=000000", 
+      color: "from-blue-600 to-indigo-600" 
+    },
+    { 
+      name: "Next.js", 
+      level: 92, 
+      icon: "https://img.icons8.com/?size=100&id=yUdJlcKanVbh&format=png&color=000000", 
+      color: "from-gray-700 to-gray-900" 
+    },
+    { 
+      name: "TypeScript", 
+      level: 90, 
+      icon: "https://img.icons8.com/?size=100&id=vMqgHSToxrJR&format=png&color=000000", 
+      color: "from-blue-600 to-blue-800" 
+    },
+    { 
+      name: "Node.js", 
+      level: 87, 
+      icon: "https://img.icons8.com/?size=100&id=54087&format=png&color=000000", 
+      color: "from-green-500 to-emerald-500" 
+    },
+    { 
+      name: "Supabase", 
+      level: 85, 
+      icon: "https://img.icons8.com/?size=100&id=sH0rW2TvYdr9&format=png&color=000000", 
+      color: "from-green-600 to-teal-600" 
+    },
+    { 
+      name: "PostgreSQL", 
+      level: 82, 
+      icon: "https://img.icons8.com/?size=100&id=38561&format=png&color=000000", 
+      color: "from-blue-700 to-indigo-800" 
+    },
+    { 
+      name: "React Native", 
+      level: 89, 
+      icon: "https://img.icons8.com/?size=100&id=pCvIfmctRaY8&format=png&color=000000", 
+      color: "from-cyan-500 to-blue-500" 
+    },
+    { 
+      name: "Figma", 
+      level: 93, 
+      icon: "https://img.icons8.com/?size=100&id=zfHRZ6i1Wg0U&format=png&color=000000", 
+      color: "from-pink-500 to-rose-500" 
+    },
+    { 
+      name: "Tailwind CSS", 
+      level: 94, 
+      icon: "https://img.icons8.com/?size=100&id=4PiNHtUJVbLs&format=png&color=000000", 
+      color: "from-cyan-400 to-blue-500" 
+    },
+    { 
+      name: "Firebase", 
+      level: 83, 
+      icon: "https://img.icons8.com/?size=100&id=62452&format=png&color=000000", 
+      color: "from-yellow-500 to-orange-500" 
+    },
+    { 
+      name: "Docker", 
+      level: 78, 
+      icon: "https://img.icons8.com/?size=100&id=cdYUlRaag9G9&format=png&color=000000", 
+      color: "from-blue-600 to-cyan-600" 
+    },
+    { 
+      name: "Git", 
+      level: 91, 
+      icon: "https://www.flaticon.com/free-icon/github_4926624?term=git&page=1&position=4&origin=search&related_id=4926624", 
+      color: "from-orange-500 to-red-500" 
+    }
   ];
 
   return (
@@ -38,11 +103,17 @@ const Skills = () => {
           {skills.map((skill, index) => (
             <div 
               key={index}
-              className="bg-white p-4 sm:p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-1000 hover:scale-105 hover:-translate-y-2 animate-fade-in-slow group cursor-pointer transform hover:rotate-1"
+              className="bg-white p-4 sm:p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-1000 hover:scale-105 hover:-translate-y-2 animate-fade-in-ultra-slow group cursor-pointer transform hover:rotate-1"
               style={{ animationDelay: `${index * 200}ms` }}
             >
               <div className="flex items-center gap-3 sm:gap-4 mb-3 sm:mb-4">
-                <div className="text-2xl sm:text-3xl group-hover:scale-110 group-hover:rotate-6 transition-all duration-700 transform">{skill.icon}</div>
+                <div className="w-8 h-8 sm:w-10 sm:h-10 group-hover:scale-110 group-hover:rotate-6 transition-all duration-700 transform">
+                  <img 
+                    src={skill.icon} 
+                    alt={skill.name}
+                    className="w-full h-full object-contain"
+                  />
+                </div>
                 <h3 className="text-lg sm:text-xl font-bold text-gray-900 group-hover:text-purple-600 transition-colors duration-500">{skill.name}</h3>
               </div>
               <div className="relative">

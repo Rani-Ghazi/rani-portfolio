@@ -1,4 +1,3 @@
-
 import { ExternalLink, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -6,9 +5,9 @@ const Portfolio = () => {
   const projects = [
     {
       title: "Digital Marketing Agency",
-      category: "Web Application",
+      category: "Web Application", 
       description: "A modern digital marketing agency website with clean design, service showcases, and client engagement features. Built with responsive design and smooth user experience.",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
+      image: "/lovable-uploads/first.png",
       tags: ["React", "Next.js", "Tailwind CSS", "TypeScript"],
       liveUrl: "https://digital-marketing-agency-psi.vercel.app/",
       githubUrl: null,
@@ -18,7 +17,7 @@ const Portfolio = () => {
       title: "Netflix Clone",
       category: "Streaming Platform",
       description: "A fully functional Netflix clone with movie browsing, detailed views, and responsive design. Features include movie categorization and smooth navigation.",
-      image: "https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?w=600&h=400&fit=crop",
+      image: "/lovable-uploads/second.png", 
       tags: ["React", "JavaScript", "CSS3", "API Integration"],
       liveUrl: "https://same-k7btvioiaa8-latest.netlify.app/",
       githubUrl: null
@@ -27,7 +26,7 @@ const Portfolio = () => {
       title: "Electronic Invoice Manager",
       category: "Business Application",
       description: "A responsive web application designed to streamline invoicing for small businesses in Oman and the Gulf. Features invoice creation, management, and tracking.",
-      image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&h=400&fit=crop",
+      image: "/lovable-uploads/screenshot.png",
       tags: ["React", "Node.js", "PostgreSQL", "Supabase"],
       liveUrl: "https://invoicemanagerapp.netlify.app/",
       githubUrl: "https://github.com/Rani-Ghazi/Invoice-Manager-App"
@@ -36,7 +35,7 @@ const Portfolio = () => {
       title: "InviteFlow - Digital Barcode System",
       category: "Event Management",
       description: "A smart digital invitation management system for event organizers in Oman. Create barcoded digital invitations and verify guests instantly using mobile + PDA.",
-      image: "https://images.unsplash.com/photo-1511578314322-379afb476865?w=600&h=400&fit=crop",
+      image: "/lovable-uploads/barcode.png",
       tags: ["React", "QR Code", "Firebase", "Mobile-First"],
       liveUrl: "https://inviteflow.netlify.app/",
       githubUrl: "https://github.com/Rani-Ghazi/InviteFlow"
