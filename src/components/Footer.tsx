@@ -38,15 +38,15 @@ const Footer = () => {
                 className="flex items-center gap-3 text-gray-300 hover:text-white transition-colors duration-500 hover:scale-105 transform group"
               >
                 <img 
-                  src="https://www.flaticon.com/free-icon/whatsapp_4423697" 
-                  alt="WhatsApp" 
+                  src="https://cdn-icons-png.flaticon.com/512/5585/5585856.png" 
+                  alt="Phone" 
                   className="w-5 h-5 group-hover:rotate-12 transition-transform duration-500"
                 />
                 <span>+968 95454284</span>
               </button>
               <div className="flex items-center gap-3 text-gray-300">
                 <img 
-                  src="https://www.flaticon.com/free-icon/location_535137" 
+                  src="https://cdn-icons-png.flaticon.com/512/535/535137.png" 
                   alt="Location" 
                   className="w-5 h-5"
                 />

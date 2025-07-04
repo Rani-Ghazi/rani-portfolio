@@ -6,7 +6,7 @@ const Services = () => {
       description: "I build custom web apps that are fast, scalable, and tailored to your business logic — not cookie-cutter templates.",
       color: "bg-gradient-to-br from-purple-600 to-purple-800",
       textColor: "text-white",
-      icon: "🌐",
+      icon: "https://img.icons8.com/?size=100&id=111139&format=png&color=000000",
       hoverColor: "hover:from-purple-700 hover:to-purple-900"
     },
     {
@@ -14,7 +14,7 @@ const Services = () => {
       description: "I design clean, user-focused interfaces that are easy to use, aligned with your goals, and backed by real UX principles.",
       color: "bg-gradient-to-br from-white to-purple-50",
       textColor: "text-gray-900",
-      icon: "🎨",
+      icon: "https://cdn-icons-png.flaticon.com/512/17109/17109631.png",
       hoverColor: "hover:from-purple-50 hover:to-purple-100"
     },
     {
@@ -22,7 +22,7 @@ const Services = () => {
       description: "I develop cross-platform mobile apps using React Native, optimized for performance, usability, and smooth user flows.",
       color: "bg-gradient-to-br from-white to-pink-50",
       textColor: "text-gray-900",
-      icon: "📱",
+      icon: "https://cdn-icons-png.flaticon.com/512/3437/3437364.png",
       hoverColor: "hover:from-pink-50 hover:to-pink-100"
     },
     {
@@ -30,7 +30,7 @@ const Services = () => {
       description: "I create cohesive visual identities and component libraries that scale with your product and team.",
       color: "bg-gradient-to-br from-white to-blue-50",
       textColor: "text-gray-900",
-      icon: "✨",
+      icon: "https://cdn-icons-png.flaticon.com/512/10237/10237810.png",
       hoverColor: "hover:from-blue-50 hover:to-blue-100"
     },
     {
@@ -38,7 +38,7 @@ const Services = () => {
       description: "I build data-driven platforms with real-time dashboards, charts, and insights to help teams make smarter decisions.",
       color: "bg-gradient-to-br from-white to-green-50",
       textColor: "text-gray-900",
-      icon: "📊",
+      icon: "https://cdn-icons-png.flaticon.com/512/8323/8323511.png",
       hoverColor: "hover:from-green-50 hover:to-green-100"
     },
     {
@@ -46,7 +46,7 @@ const Services = () => {
       description: "I deliver end-to-end e-commerce systems with payment integration, inventory tracking, and user account flows.",
       color: "bg-gradient-to-br from-white to-yellow-50",
       textColor: "text-gray-900",
-      icon: "🛒",
+      icon: "https://cdn-icons-png.flaticon.com/512/3176/3176363.png",
       hoverColor: "hover:from-yellow-50 hover:to-yellow-100"
     }
   ];
@@ -77,7 +77,13 @@ const Services = () => {
               style={{ animationDelay: `${index * 300}ms` }}
             >
               <div className="flex items-center gap-3 mb-4">
-                <div className="text-2xl sm:text-3xl group-hover:scale-110 group-hover:rotate-6 transition-all duration-700 transform">{service.icon}</div>
+                <div className="w-8 h-8 sm:w-10 sm:h-10 group-hover:scale-110 group-hover:rotate-6 transition-all duration-700 transform">
+                  <img 
+                    src={service.icon} 
+                    alt={service.title}
+                    className="w-full h-full object-contain"
+                  />
+                </div>
                 <h3 className="text-lg sm:text-xl font-bold group-hover:text-purple-600 transition-colors duration-500">{service.title}</h3>
               </div>
               <p className={`${service.color.includes('white') ? 'text-gray-600 group-hover:text-gray-800' : 'text-white/90 group-hover:text-white'} leading-relaxed text-sm sm:text-base transition-colors duration-500`}>
