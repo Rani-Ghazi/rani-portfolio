@@ -55,7 +55,7 @@ const Hero = () => {
               onClick={openWhatsApp}
               className="bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white px-8 sm:px-10 py-4 rounded-full font-semibold transition-all duration-700 hover:scale-110 hover:shadow-2xl transform w-full sm:w-auto animate-bounce-ultra-gentle shadow-lg hover:shadow-purple-500/50"
             >
-              Hire Me Now
+              Let's Work Together
             </Button>
             <Button 
               onClick={scrollToPortfolio}
@@ -86,7 +86,7 @@ const Hero = () => {
             <div className="w-72 h-72 sm:w-96 sm:h-96 lg:w-[28rem] lg:h-[28rem] rounded-3xl bg-gradient-to-br from-purple-600 via-purple-700 to-purple-800 p-1.5 hover:scale-105 transition-all duration-1000 hover:rotate-2 transform shadow-2xl hover:shadow-purple-500/50 animate-glow-ultra-slow">
               <div className="w-full h-full rounded-3xl bg-gray-900 flex items-center justify-center overflow-hidden">
                 <img 
-                  src="/lovable-uploads/38b69509-5ac8-43b9-8d6e-6bd21b0213db.png" 
+                  src="/lovable-uploads/699ac11f-7151-4af4-be7d-ee02c80da982.png" 
                   alt="Rani Ghazi - Software Engineer & UX Designer"
                   className="w-full h-full object-cover rounded-3xl transition-all duration-1000 group-hover:scale-105 group-hover:brightness-110"
                 />
@@ -103,9 +103,9 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Enhanced scroll indicator */}
+      {/* Enhanced scroll indicator - Fixed centering on mobile */}
       <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce-ultra-gentle cursor-pointer hover:scale-125 transition-transform duration-700 group" onClick={scrollToPortfolio}>
-        <div className="bg-white rounded-full p-3 shadow-xl group-hover:shadow-2xl transition-all duration-500 border border-purple-100">
+        <div className="bg-white rounded-full p-3 shadow-xl group-hover:shadow-2xl transition-all duration-500 border border-purple-100 flex items-center justify-center">
           <ArrowDown className="w-6 h-6 text-purple-600 group-hover:text-purple-800 transition-colors duration-500" />
         </div>
       </div>
