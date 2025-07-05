@@ -1,3 +1,4 @@
+
 import { ExternalLink, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -7,7 +8,7 @@ const Portfolio = () => {
       title: "Digital Marketing Agency",
       category: "Web Application", 
       description: "A modern digital marketing agency website with clean design, service showcases, and client engagement features. Built with responsive design and smooth user experience.",
-      image: "/lovable-uploads/first.png",
+      image: "/lovable-uploads/8dc4d000-b49a-4ae6-9f10-3914d34eda4e.png",
       tags: ["React", "Next.js", "Tailwind CSS", "TypeScript"],
       liveUrl: "https://digital-marketing-agency-psi.vercel.app/",
       githubUrl: null,
@@ -17,7 +18,7 @@ const Portfolio = () => {
       title: "Netflix Clone",
       category: "Streaming Platform",
       description: "A fully functional Netflix clone with movie browsing, detailed views, and responsive design. Features include movie categorization and smooth navigation.",
-      image: "/lovable-uploads/second.png", 
+      image: "/lovable-uploads/f261ee0a-6017-4c47-ab1a-31b5a06e67fc.png", 
       tags: ["React", "JavaScript", "CSS3", "API Integration"],
       liveUrl: "https://same-k7btvioiaa8-latest.netlify.app/",
       githubUrl: null
@@ -26,7 +27,7 @@ const Portfolio = () => {
       title: "Electronic Invoice Manager",
       category: "Business Application",
       description: "A responsive web application designed to streamline invoicing for small businesses in Oman and the Gulf. Features invoice creation, management, and tracking.",
-      image: "/lovable-uploads/screenshot.png",
+      image: "/lovable-uploads/d54b8c5b-6686-4505-ad5b-20e61cccdd1a.png",
       tags: ["React", "Node.js", "PostgreSQL", "Supabase"],
       liveUrl: "https://invoicemanagerapp.netlify.app/",
       githubUrl: "https://github.com/Rani-Ghazi/Invoice-Manager-App"
@@ -35,7 +36,7 @@ const Portfolio = () => {
       title: "InviteFlow - Digital Barcode System",
       category: "Event Management",
       description: "A smart digital invitation management system for event organizers in Oman. Create barcoded digital invitations and verify guests instantly using mobile + PDA.",
-      image: "/lovable-uploads/barcode.png",
+      image: "/lovable-uploads/0f234bb4-01e6-423d-879d-1a1c6eb0b92a.png",
       tags: ["React", "QR Code", "Firebase", "Mobile-First"],
       liveUrl: "https://inviteflow.netlify.app/",
       githubUrl: "https://github.com/Rani-Ghazi/InviteFlow"
@@ -193,24 +194,6 @@ const Portfolio = () => {
               </div>
             </div>
           ))}
-        </div>
-
-        {/* Call to Action */}
-        <div className="text-center mt-16 sm:mt-20 animate-fade-in-ultra-slow" style={{ animationDelay: '1.5s' }}>
-          <div className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-3xl p-8 sm:p-12 border border-purple-100">
-            <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 hover:text-purple-600 transition-colors duration-500">
-              Have a project in mind?
-            </h3>
-            <p className="text-gray-600 text-lg mb-6 max-w-2xl mx-auto">
-              Let's discuss how I can help bring your ideas to life with clean code and great design.
-            </p>
-            <Button 
-              onClick={() => window.open('https://wa.me/0096895454284', '_blank')}
-              className="bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white rounded-xl hover:scale-110 transition-all duration-500 hover:shadow-2xl transform text-lg py-3 px-8"
-            >
-              Let's Work Together
-            </Button>
-          </div>
         </div>
       </div>
     </section>
