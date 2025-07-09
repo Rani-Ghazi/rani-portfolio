@@ -1,4 +1,3 @@
-
 import { ExternalLink, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -13,6 +12,15 @@ const Portfolio = () => {
       liveUrl: "https://digital-marketing-agency-psi.vercel.app/",
       githubUrl: null,
       featured: true
+    },
+    {
+      title: "POS System - Oman",
+      category: "Point of Sale System", 
+      description: "A comprehensive Point of Sale system designed for businesses in Oman. Features inventory management, sales tracking, and integrated business operations with Arabic language support.",
+      image: "/lovable-uploads/3cd4f901-7ded-487a-9c93-af7497521a9e.png",
+      tags: ["React", "JavaScript", "Arabic Support", "Business Management"],
+      liveUrl: "https://pos-oman.netlify.app/",
+      githubUrl: "https://github.com/Rani-Ghazi/pos-oman.git"
     },
     {
       title: "Netflix Clone",
