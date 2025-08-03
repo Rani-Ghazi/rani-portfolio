@@ -14,6 +14,24 @@ const Portfolio = () => {
       featured: true
     },
     {
+      title: "FitGym",
+      category: "Fitness & Health Website",
+      description: "A modern gym website with dynamic design, membership plans, trainer profiles, and fitness program showcases. Built with focus on user engagement and motivation.",
+      image: "/lovable-uploads/052a6d5f-3a41-403f-9f90-f5672a0e16ed.png",
+      tags: ["React", "CSS3", "Responsive Design", "UI/UX"],
+      liveUrl: "https://gyym-fiit.vercel.app/",
+      githubUrl: null
+    },
+    {
+      title: "Oman Properties",
+      category: "Real Estate Platform",
+      description: "A comprehensive real estate website for Oman properties. Features property listings, search functionality, and detailed property information with modern design.",
+      image: "/lovable-uploads/a0b2ceef-e080-4e79-b609-2e5316abc8e3.png",
+      tags: ["React", "JavaScript", "Real Estate", "Property Management"],
+      liveUrl: "https://omanproperty.netlify.app/",
+      githubUrl: null
+    },
+    {
       title: "POS System - Oman",
       category: "Point of Sale System", 
       description: "A comprehensive Point of Sale system designed for businesses in Oman. Features inventory management, sales tracking, and integrated business operations with Arabic language support.",
