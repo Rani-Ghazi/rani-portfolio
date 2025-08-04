@@ -1,0 +1,29 @@
+
+{
+  "name": "Rani Ghazi - Creative Developer & Product Designer",
+  "short_name": "Rani Ghazi",
+  "description": "Creative developer and product designer building smart solutions for the Gulf market",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#8B5CF6",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/lovable-uploads/c12d5489-7004-4e16-b319-44224585ff5b.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/lovable-uploads/c12d5489-7004-4e16-b319-44224585ff5b.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["portfolio", "business", "productivity"],
+  "lang": "en",
+  "scope": "/",
+  "id": "rani-ghazi-portfolio"
+}
