@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -85,72 +84,11 @@ export default {
 					to: {
 						height: '0'
 					}
-				},
-				'float': {
-					'0%, 100%': { transform: 'translateY(0px)' },
-					'50%': { transform: 'translateY(-20px)' }
-				},
-				'float-slow': {
-					'0%, 100%': { transform: 'translateY(0px)' },
-					'50%': { transform: 'translateY(-10px)' }
-				},
-				'bounce-gentle': {
-					'0%, 100%': { transform: 'translateY(0px)' },
-					'50%': { transform: 'translateY(-5px)' }
-				},
-				'pulse-glow': {
-					'0%, 100%': { boxShadow: '0 0 20px rgba(147, 51, 234, 0.3)' },
-					'50%': { boxShadow: '0 0 40px rgba(147, 51, 234, 0.6)' }
-				},
-				'wiggle': {
-					'0%, 100%': { transform: 'rotate(-3deg)' },
-					'50%': { transform: 'rotate(3deg)' }
-				},
-				'slide-up': {
-					'0%': { transform: 'translateY(100px)', opacity: '0' },
-					'100%': { transform: 'translateY(0px)', opacity: '1' }
-				},
-				'slide-down': {
-					'0%': { transform: 'translateY(-100px)', opacity: '0' },
-					'100%': { transform: 'translateY(0px)', opacity: '1' }
-				},
-				'slide-left': {
-					'0%': { transform: 'translateX(-100px)', opacity: '0' },
-					'100%': { transform: 'translateX(0px)', opacity: '1' }
-				},
-				'slide-right': {
-					'0%': { transform: 'translateX(100px)', opacity: '0' },
-					'100%': { transform: 'translateX(0px)', opacity: '1' }
-				},
-				'zoom-in': {
-					'0%': { transform: 'scale(0.5)', opacity: '0' },
-					'100%': { transform: 'scale(1)', opacity: '1' }
-				},
-				'rotate-slow': {
-					'0%': { transform: 'rotate(0deg)' },
-					'100%': { transform: 'rotate(360deg)' }
-				},
-				'shake': {
-					'0%, 100%': { transform: 'translateX(0)' },
-					'25%': { transform: 'translateX(-5px)' },
-					'75%': { transform: 'translateX(5px)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out',
-				'float': 'float 6s ease-in-out infinite',
-				'float-slow': 'float-slow 8s ease-in-out infinite',
-				'bounce-gentle': 'bounce-gentle 4s ease-in-out infinite',
-				'pulse-glow': 'pulse-glow 3s ease-in-out infinite',
-				'wiggle': 'wiggle 1s ease-in-out infinite',
-				'slide-up': 'slide-up 0.8s ease-out',
-				'slide-down': 'slide-down 0.8s ease-out',
-				'slide-left': 'slide-left 0.8s ease-out',
-				'slide-right': 'slide-right 0.8s ease-out',
-				'zoom-in': 'zoom-in 0.6s ease-out',
-				'rotate-slow': 'rotate-slow 20s linear infinite',
-				'shake': 'shake 0.5s ease-in-out'
+				'accordion-up': 'accordion-up 0.2s ease-out'
 			}
 		}
 	},
