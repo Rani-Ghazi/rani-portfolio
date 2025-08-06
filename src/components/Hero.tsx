@@ -1,5 +1,6 @@
 
 import { Button } from "@/components/ui/button";
+import { TextEffect } from "@/components/ui/text-effect";
 import { ArrowDown } from "lucide-react";
 import { useEffect, useState } from "react";
 
@@ -48,13 +49,26 @@ const Hero = () => {
             <p className="text-base sm:text-lg lg:text-xl text-purple-600 font-semibold mb-2 sm:mb-3 animate-fade-in-ultra-slow transform hover:scale-105 transition-all duration-700 animate-bounce-ultra-gentle" style={{ animationDelay: '0.5s' }}>
               Hello, I am Rani Ghazi
             </p>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 leading-tight animate-fade-in-ultra-slow hover:text-purple-700 transition-all duration-700 transform hover:scale-105" style={{ animationDelay: '0.8s' }}>
-              Software Engineer
-              <span className="text-purple-600 animate-pulse-ultra-slow inline-block transform hover:rotate-180 transition-transform duration-1000"> +</span>
-            </h1>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-purple-600 mt-2 sm:mt-3 animate-fade-in-ultra-slow hover:text-purple-800 transition-all duration-700 transform hover:scale-105" style={{ animationDelay: '1.2s' }}>
-              UX Designer
-            </h2>
+            <div className="space-y-2 sm:space-y-3">
+              <TextEffect
+                per="word"
+                preset="slide"
+                delay={0.8}
+                as="h1"
+                className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 leading-tight hover:text-purple-700 transition-all duration-700 transform hover:scale-105"
+              >
+                Software Engineer
+              </TextEffect>
+              <TextEffect
+                per="word"
+                preset="blur"
+                delay={1.2}
+                as="h2"
+                className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-purple-600 hover:text-purple-800 transition-all duration-700 transform hover:scale-105"
+              >
+                + UX Designer
+              </TextEffect>
+            </div>
           </div>
           
           <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-2xl leading-relaxed animate-fade-in-ultra-slow mx-auto lg:mx-0 transform hover:text-gray-800 transition-all duration-500 hover:scale-105 px-4 lg:px-0" style={{ animationDelay: '1.6s' }}>
