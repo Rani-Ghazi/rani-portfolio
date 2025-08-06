@@ -51,8 +51,8 @@ const Hero = () => {
             </p>
             <div className="space-y-2 sm:space-y-3">
               <TextEffect
-                per="word"
-                preset="slide"
+                per="char"
+                preset="scale"
                 delay={0.8}
                 as="h1"
                 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 leading-tight hover:text-purple-700 transition-all duration-700 transform hover:scale-105"
@@ -61,8 +61,8 @@ const Hero = () => {
               </TextEffect>
               <TextEffect
                 per="word"
-                preset="blur"
-                delay={1.2}
+                preset="shake"
+                delay={2.5}
                 as="h2"
                 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-purple-600 hover:text-purple-800 transition-all duration-700 transform hover:scale-105"
               >
@@ -71,12 +71,17 @@ const Hero = () => {
             </div>
           </div>
           
-          <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-2xl leading-relaxed animate-fade-in-ultra-slow mx-auto lg:mx-0 transform hover:text-gray-800 transition-all duration-500 hover:scale-105 px-4 lg:px-0" style={{ animationDelay: '1.6s' }}>
-            I build high-performance web and mobile applications with clean code, scalable architecture, and user-first design.
-            Based in Oman with 5+ years turning ideas into digital reality.
-          </p>
+          <TextEffect
+            per="word"
+            preset="slide"
+            delay={4.0}
+            as="p"
+            className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-2xl leading-relaxed mx-auto lg:mx-0 transform hover:text-gray-800 transition-all duration-500 hover:scale-105 px-4 lg:px-0"
+          >
+            I build high-performance web and mobile applications with clean code, scalable architecture, and user-first design. Based in Oman with 5+ years turning ideas into digital reality.
+          </TextEffect>
 
-          <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 animate-fade-in-ultra-slow justify-center lg:justify-start px-4 lg:px-0" style={{ animationDelay: '2s' }}>
+          <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 animate-fade-in-ultra-slow justify-center lg:justify-start px-4 lg:px-0" style={{ animationDelay: '6s' }}>
             <Button 
               onClick={openWhatsApp}
               className="bg-gradient-to-r from-purple-600 via-purple-700 to-purple-800 hover:from-purple-700 hover:via-purple-800 hover:to-purple-900 text-white px-6 sm:px-8 lg:px-10 py-3 sm:py-4 rounded-full font-semibold transition-all duration-700 hover:scale-110 hover:shadow-2xl transform w-full sm:w-auto animate-bounce-ultra-gentle shadow-lg hover:shadow-purple-500/50 hover:rotate-2 text-sm sm:text-base"
@@ -93,12 +98,12 @@ const Hero = () => {
           </div>
 
           {/* Enhanced Social Links with improved hover animations */}
-          <div className="flex gap-3 sm:gap-4 lg:gap-6 pt-4 sm:pt-6 animate-fade-in-ultra-slow justify-center lg:justify-start" style={{ animationDelay: '2.4s' }}>
+          <div className="flex gap-3 sm:gap-4 lg:gap-6 pt-4 sm:pt-6 animate-fade-in-ultra-slow justify-center lg:justify-start" style={{ animationDelay: '6.5s' }}>
             {['Facebook', 'Instagram', 'Twitter', 'LinkedIn'].map((social, index) => (
               <div 
                 key={social} 
                 className="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 rounded-full bg-white shadow-xl flex items-center justify-center hover:bg-purple-50 transition-all duration-700 cursor-pointer hover:scale-125 hover:shadow-2xl animate-fade-in-ultra-slow hover:rotate-12 transform border border-purple-100 animate-bounce-ultra-gentle"
-                style={{ animationDelay: `${2.8 + index * 0.2}s` }}
+                style={{ animationDelay: `${7 + index * 0.2}s` }}
               >
                 <div className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 bg-gradient-to-br from-purple-600 to-purple-800 rounded-full animate-pulse-ultra-slow"></div>
               </div>
