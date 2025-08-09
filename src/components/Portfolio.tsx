@@ -14,6 +14,15 @@ const Portfolio = () => {
       featured: true
     },
     {
+      title: "Foodly",
+      category: "Food Delivery App",
+      description: "A modern food delivery web application for Oman. Features restaurant browsing, menu management, order tracking, and seamless user experience for food ordering and delivery services.",
+      image: "/lovable-uploads/c12d5489-7004-4e16-b319-44224585ff5b.png",
+      tags: ["React", "JavaScript", "Food Delivery", "E-commerce"],
+      liveUrl: "https://foodlyoman.netlify.app/",
+      githubUrl: null
+    },
+    {
       title: "FitGym",
       category: "Fitness & Health Website",
       description: "A modern gym website with dynamic design, membership plans, trainer profiles, and fitness program showcases. Built with focus on user engagement and motivation.",
