@@ -14,6 +14,15 @@ const Portfolio = () => {
       featured: true
     },
     {
+      title: "Lamsaty",
+      category: "Flower Shop Website",
+      description: "A beautiful flower shop website featuring Arabic design and layout. Showcases floral arrangements, bouquets, and flower delivery services with elegant visual presentation.",
+      image: "/lovable-uploads/50e8a61a-5fdd-47cd-bb30-9cbd2df74664.png",
+      tags: ["React", "Arabic UI", "E-commerce", "Responsive Design"],
+      liveUrl: "https://lamsaty.netlify.app/",
+      githubUrl: null
+    },
+    {
       title: "Foodly",
       category: "Food Delivery App",
       description: "A modern food delivery web application for Oman. Features restaurant browsing, menu management, order tracking, and seamless user experience for food ordering and delivery services.",
