@@ -14,21 +14,21 @@ const Portfolio = () => {
       featured: true
     },
     {
-      title: "Ahmed Moner Portfolio",
-      category: "Graphic Designer Portfolio",
-      description: "A modern and elegant portfolio website for a graphic designer. Features creative showcases, professional presentation, and smooth user experience with Next.js framework.",
-      image: "/lovable-uploads/eb676b20-935e-4ca2-b4f1-cc9cd3b2cac3.png",
-      tags: ["Next.js", "React", "Graphic Design", "Portfolio"],
-      liveUrl: "https://ahmed-moner.netlify.app/",
-      githubUrl: null
-    },
-    {
       title: "Lamsaty",
       category: "Flower Shop Website",
       description: "A beautiful flower shop website featuring Arabic design and layout. Showcases floral arrangements, bouquets, and flower delivery services with elegant visual presentation.",
       image: "/lovable-uploads/50e8a61a-5fdd-47cd-bb30-9cbd2df74664.png",
       tags: ["React", "Arabic UI", "E-commerce", "Responsive Design"],
       liveUrl: "https://lamsaty.netlify.app/",
+      githubUrl: null
+    },
+    {
+      title: "Ahmed Moner Portfolio",
+      category: "Graphic Designer Portfolio",
+      description: "A modern and elegant portfolio website for a graphic designer. Features creative showcases, professional presentation, and smooth user experience with Next.js framework.",
+      image: "/lovable-uploads/eb676b20-935e-4ca2-b4f1-cc9cd3b2cac3.png",
+      tags: ["Next.js", "React", "Graphic Design", "Portfolio"],
+      liveUrl: "https://ahmed-moner.netlify.app/",
       githubUrl: null
     },
     {
