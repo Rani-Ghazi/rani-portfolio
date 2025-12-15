@@ -1,8 +1,7 @@
-
 {
-  "name": "Rani Ghazi - Creative Developer & Product Designer",
+  "name": "Rani Ghazi - Web Designer & Creative Developer",
   "short_name": "Rani Ghazi",
-  "description": "Creative developer and product designer building smart solutions for the Gulf market",
+  "description": "Web designer and creative developer crafting marketing-focused websites and digital experiences",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
@@ -22,7 +21,7 @@
       "purpose": "any maskable"
     }
   ],
-  "categories": ["portfolio", "business", "productivity"],
+  "categories": ["portfolio", "design", "web development", "marketing"],
   "lang": "en",
   "scope": "/",
   "id": "rani-ghazi-portfolio"
