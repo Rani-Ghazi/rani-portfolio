@@ -72,7 +72,7 @@ const Footer = () => {
               <div className="absolute bottom-0 left-0 w-12 h-0.5 bg-gradient-to-r from-purple-500 to-pink-500 animate-pulse-slow"></div>
             </h3>
             <div className="space-y-3">
-              {['Web Applications', 'Mobile Apps', 'UI/UX Design', 'E-commerce Solutions'].map((service, index) => (
+              {['Web Applications', 'UI/UX Design', 'Branding & Design Systems'].map((service, index) => (
                 <div key={service} className="text-gray-300 hover:text-white transition-all duration-700 cursor-pointer hover:scale-105 transform p-2 rounded-lg hover:bg-white/5 text-sm sm:text-base">
                   {service}
                 </div>

@@ -156,7 +156,7 @@ const Skills = () => {
               Technologies
             </span>
             <br />
-            <span className="text-gray-800">I Master</span>
+            <span className="text-gray-800">I Use</span>
           </h2>
           
           <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">

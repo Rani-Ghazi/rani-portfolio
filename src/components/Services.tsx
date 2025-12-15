@@ -19,15 +19,6 @@ const Services = () => {
       borderColor: "border-purple-200"
     },
     {
-      title: "Mobile Apps",
-      description: "I develop cross-platform mobile apps using React Native, optimized for performance, usability, and smooth user flows.",
-      color: "bg-gradient-to-br from-white to-pink-50",
-      textColor: "text-gray-900",
-      icon: "https://cdn-icons-png.flaticon.com/512/3437/3437364.png",
-      hoverColor: "hover:from-pink-50 hover:to-pink-100",
-      borderColor: "border-pink-200"
-    },
-    {
       title: "Branding & Design Systems",
       description: "I create cohesive visual identities and component libraries that scale with your product and team.",
       color: "bg-gradient-to-br from-white to-blue-50",
@@ -35,24 +26,6 @@ const Services = () => {
       icon: "https://cdn-icons-png.flaticon.com/512/10237/10237810.png",
       hoverColor: "hover:from-blue-50 hover:to-blue-100",
       borderColor: "border-blue-200"
-    },
-    {
-      title: "Dashboards & Analytics Tools",
-      description: "I build data-driven platforms with real-time dashboards, charts, and insights to help teams make smarter decisions.",
-      color: "bg-gradient-to-br from-white to-green-50",
-      textColor: "text-gray-900",
-      icon: "https://cdn-icons-png.flaticon.com/512/8323/8323511.png",
-      hoverColor: "hover:from-green-50 hover:to-green-100",
-      borderColor: "border-green-200"
-    },
-    {
-      title: "E-commerce Solutions",
-      description: "I deliver end-to-end e-commerce systems with payment integration, inventory tracking, and user account flows.",
-      color: "bg-gradient-to-br from-white to-yellow-50",
-      textColor: "text-gray-900",
-      icon: "https://cdn-icons-png.flaticon.com/512/3176/3176363.png",
-      hoverColor: "hover:from-yellow-50 hover:to-yellow-100",
-      borderColor: "border-yellow-200"
     }
   ];
 
